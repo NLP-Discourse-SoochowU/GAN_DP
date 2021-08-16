@@ -65,7 +65,7 @@ https://github.com/NLP-Discourse-SoochowU/t2d_discourseparser for details.
 #### Model Training
 In this project, we tuned the hyper-parameters for best performance and the details are well shown in the ACL 
 paper. Although we had tried our best to check the correction of the paper content, we still find one inaccuracy:
-(i) We trained the XLNet-based systems for around 50 rounds instead of the 30 written in the Appendix. 
+**We trained the XLNet systems for 50 rounds instead of the 30 written in the Appendix.** 
 
 To train the parsing models, run the following commands:
 ```
