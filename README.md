@@ -41,14 +41,14 @@ RST Parseval because the metric will overestimate the performance level of DRS p
 
 As we know, when using *RST Parseval*, we actually have 19 relation categories considered for evaluation, i.e., 
 the 18 rhetorical relations and the **SPAN** tag. Among these tags, the SPAN relation accounts for more than a 
-half of the relation labels in RST-DT, which will which may enlarge the uncertainty of performance comparison. 
+half of the relation labels in RST-DT, which may enlarge the uncertainty of performance comparison. 
 Specifically, the systems that predict relation tags for the parent node will show weaker performance than the 
 systems that predict the relation category of each child node. **Why?** Usually, the second kind of systems also
 employ SPAN tags for model training and this brings in additional gradients for the model to greedily maximize 
 the rewards by assigning SPAN label to appropriate tree nodes. However, for the first kind of systems, the SPAN 
 labels are assigned only according to their predicted Nuclearity category (our system belongs to this kind). 
-Here we report the results of (Yu et al. 2018) and ours on **SPAN** for reference:
 
+Here we report the results of (Yu et al. 2018) and ours on **SPAN** for reference:
 ```
 --- system ---------- P ---- R ---- F
  Yu et al. (2018)    60.9   63.7   62.3 (The parsing results are from Yu Nan)
