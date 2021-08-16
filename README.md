@@ -84,8 +84,8 @@ and one can directly apply it to downstream NLP tasks.
 #### Tips
 RST-style discourse parsing has long been known to be complicated, which is why the system we provide actually 
 contains so many experimental settings. We had conducted a set of experimental comparisons in this system, and 
-we found that some experimental details could be helpful for your own system, e.g., the **EDU attention**, the 
-**Context attention**, the **residual connection**, the **parameter initialization method**, etc. These code 
+we found that some experimental details could be helpful for your own system, e.g., the EDU attention, the 
+Context attention, the residual connection, the parameter initialization method, etc. These code 
 details can hardly bring great research value in this period, but they will make your system more stable.
 
 <b>-- License</b>
