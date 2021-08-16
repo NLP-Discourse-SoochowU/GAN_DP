@@ -26,24 +26,28 @@ parser (automatic EDU segmentation and discourse parsing) in the project **sota_
 researchers to directly apply it to other NLP tasks.
 
 We have explained in paper that there are some differences between the XLNet-based systems and the other 
-systems. I re-checked the system and found that there are still two points that I forgot to mention: (i) We 
-did not use the sentence and paragraph boundaries in the Chinese system, because the performance is bad; (ii)
-In the English XLNet-based parser, we did not input the EDU vectors into RNNs before split point encoding.
+systems. I re-checked the system and found that there are still two points that I forgot to mention: 
+**(i)** We did not use the sentence and paragraph boundaries in the Chinese system, because the performance 
+is bad; 
+
+**(ii)** In the English XLNet-based parser, we did not input the EDU vectors into RNNs before split point 
+encoding.
 
 #### Performance Evaluation
 
-As stated in the paper, we employ the original Parseval (Morey et al. 2017) to evaluate our English DRS 
-parser and report the micro-averaged F1 score as performance. We did not report the results based on Marcu's
-RST Parseval because the metric will overestimate the performance level of DRS parsing. Moreover, as we know,
-when using RST Parseval, we actually have 19 relation categories considered for performance calculation, i.e., 
-the 18 rhetorical relations and the **SPAN** tag accounts for more than a half of the relation labels in the 
-RST-DT corpus. And the additional SPAN tag will bring in another unfairness which enlarges the uncertainty of 
-performance comparison. Specifically, the systems that predict relation tags for the parent node will show weaker 
-performance than the systems that predict relation for each child node. Why? The second kind of system also 
-uses the SPAN tag for model training and this brings additional gradients for the model to maximize the rewards
-by directly assigning SPAN label to some tree nodes. However, for the systems in the first category, the SPAN 
-labels are assigned only according to their predicted Nuclearity category. For reference, we report the results
-of (Yu et al. 2018) and ours on **SPAN**:
+As stated in the paper, we employ the *original Parseval (Morey et al. 2017)* to evaluate our English DRS 
+parser and report the **micro-averaged F1-score** as performance. We did not report the results based on Marcu's
+RST Parseval because the metric will overestimate the performance level of DRS parsing. 
+
+As we know, when using *RST Parseval*, we actually have 19 relation categories considered for performance 
+calculation, i.e., the 18 rhetorical relations and the **SPAN** tag which accounts for more than a half of the 
+relation labels in the RST-DT corpus. And the additional SPAN tag will bring in another unfairness which enlarges 
+the uncertainty of performance comparison. Specifically, the systems that predict relation tags for the parent 
+node will show weaker performance than the systems that predict relation for each child node. Why? The second 
+kind of system uses the SPAN tag for model training and this will bring in additional gradients for the model 
+to maximize the rewards by directly assigning SPAN label to some tree nodes. However, for the systems in the 
+first category, the SPAN labels are assigned only according to their predicted Nuclearity category. Here we report 
+the results of (Yu et al. 2018) and ours on **SPAN** for reference:
 
 ```
 --- system ---------- P ---- R ---- F
