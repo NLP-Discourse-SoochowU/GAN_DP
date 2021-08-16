@@ -55,9 +55,9 @@ Here we report the results of (Yu et al. 2018) and ours on **SPAN** for referenc
  Ours                46.1   43.1   44.5
 ```
 
-Obviously, we can not judge whether the performance improvements come from the 18 rhetorical relations or the 
-fake relation "SPAN", which may hinder the progress of DRS parsing. Moreover, we explicitly recommend other DRS
-researchers to use the original Parseval to evaluate their parsers for a more clear comparison.
+Obviously, it's hard to judge whether the performance improvements come from the 18 rhetorical relations or the 
+fake relation "SPAN" when using RST Parseval. For more clear performance comparison, we explicitly recommend 
+other DRS researchers to use the original Parseval to evaluate their parsers.
  
 For Chinese DRS parsing, we use a strict method for performance evaluation, and one can refer to 
 https://github.com/NLP-Discourse-SoochowU/t2d_discourseparser for details.
