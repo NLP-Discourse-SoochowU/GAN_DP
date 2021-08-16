@@ -20,11 +20,10 @@ For any questions please directly send e-mails to zzlynx@outlook.com (Longyin Zh
  |-en_dp_gan  English discourse parser based on GloVe and ELMo
  |-en_dp_gan_xlnet  English discourse parser based on XLNet
 ```
-We do not provide data in this project for 1. The data is too large to be uploaded to Github; 2. I have
-no right to open source some data like CDTB and RST-DT. Therefore, please prepare the data by yourself if
-you want to train a parser. By the way, we will provide a pre-trained end2end DRS parser (automatic EDU 
-segmentation and discourse parsing) in the project **sota_end2end_parser** for other researchers to directly 
-apply it to other NLP tasks.
+We do not provide data in this project for the data is too large to be uploaded to Github. Please prepare 
+the data by yourself if you want to train a parser. By the way, we will provide a pre-trained end2end DRS 
+parser (automatic EDU segmentation and discourse parsing) in the project **sota_end2end_parser** for other 
+researchers to directly apply it to other NLP tasks.
 
 We have explained in paper that there are some differences between the XLNet-based systems and the other 
 systems. I re-checked the system and found that there are still two points that I forgot to mention: (i) We 
