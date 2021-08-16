@@ -76,7 +76,7 @@ To train the parsing models, run the following commands:
 Due to the utilization of GAN nets, we found that the parsing performance has some fluctuation, it is related to
 the hardware and the software running environment you use. It should be noted that some researchers may 
 use the preprocessed RST-DT corpus for experiments, there could be some tiny differences when compared with the 
-original data. We recommend using the original formal RST-DT corpus for experimentation. 
+original data. We recommend using the original formal RST-DT corpus for experiments. 
 
 We will provide a pre-trained end-to-end discourse parser at 
 https://github.com/NLP-Discourse-SoochowU/sota_end2end_parser, 
