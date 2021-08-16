@@ -78,8 +78,7 @@ the hardware and the software running environment you use. It should be noted th
 use the preprocessed RST-DT corpus for experiments, there could be some tiny differences when compared with the 
 original data. We recommend using the original formal RST-DT corpus for experiments. 
 
-We will provide a pre-trained end-to-end discourse parser at 
-https://github.com/NLP-Discourse-SoochowU/sota_end2end_parser, 
+We will provide a pre-trained end-to-end parser at https://github.com/NLP-Discourse-SoochowU/sota_end2end_parser, 
 and one can directly use it to generate rhetorical structures for your own article data.
 
 #### Tips
