@@ -1,0 +1,3 @@
+[submodule "berkeleyparser"]
+	path = berkeleyparser
+	url = git@github.com:slavpetrov/berkeleyparser.git

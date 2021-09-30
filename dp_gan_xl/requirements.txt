@@ -1,0 +1,10 @@
+nltk
+torch==0.4.1
+thulac
+tqdm
+gensim
+numpy
+tensorboardX
+matplotlib
+sklearn==0.20.0
+pyltp==0.2.1
