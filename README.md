@@ -3,6 +3,8 @@
 This project presents the recently proposed GAN-based DRS parser in 
 **Adversarial Learning for Discourse Rhetorical Structure Parsing (ACL-IJCNLP2021)**. 
 For any questions please directly send e-mails to zzlynx@outlook.com (Longyin Zhang).
+One may find that English parser is not included here, because of the close correlation 
+between our various studies, we will release the English system in September 22.
 
 #### Installation
 - Python 3.6.10 
@@ -60,7 +62,17 @@ fake relation "SPAN" when using RST Parseval. For more clear performance compari
 other DRS researchers to use the original Parseval to evaluate their parsers.
  
 For Chinese DRS parsing, we use a strict method for performance evaluation, and one can refer to 
-https://github.com/NLP-Discourse-SoochowU/t2d_discourseparser for details.
+https://github.com/NLP-Discourse-SoochowU/t2d_discourseparser for details. 
+Recently, some researchers asked me a question, that is, "Why use different metrics for CDTB parsing in 
+2020 and 2021's parsers?" I think it necessary to give an answer here. Actually, our work on top-down RST 
+parsing was finished in 2019 and we once send the research to ACL2019 and it was rejected. There is a 2-year 
+distance between the two works and we had some new research during this time including our findings on parsing
+evaluation. We found that the RST- and original-Parseval only consider span boundaries for structure analysis 
+and ignore the split points, which is not strict enough, and we discussed and proposed a new evaluation method 
+and have a try in CDTB analysis. Besides, when we send the work to ACL2021, we thought we were using the 
+original-Parseval for evaluation but later we found we just used the new evaluation method. Therefore, we re-report 
+the results of our 2020's work using the new strict evaluation method to give inspiration for following RST 
+researchers.
 
 #### Model Training
 In this project, we tuned the hyper-parameters for best performance and the details are well shown in the ACL 
