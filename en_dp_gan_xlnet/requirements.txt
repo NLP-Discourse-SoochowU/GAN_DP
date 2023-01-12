@@ -1,0 +1,8 @@
+nltk
+torch>=0.4
+thulac
+tqdm
+gensim
+numpy
+tensorboardX
+matplotlib
